@@ -8,5 +8,10 @@ namespace Lesson_2.Classes
 {
     internal class Less_4
     {
+        void Test2()
+        {
+            Console.WriteLine("Test2222222");
+        }
+           
     }
 }
