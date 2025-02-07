@@ -11,7 +11,7 @@ namespace Lesson_2.Classes
     {
         void Test()
         {
-            Console.WriteLine("Test");
+            Console.WriteLine("Test3333333");
         }
     }
 }
