@@ -63,6 +63,7 @@
     <Compile Include="Classes\Less_1.cs" />
     <Compile Include="Classes\Less_2.cs" />
     <Compile Include="Classes\Less_3.cs" />
+    <Compile Include="Classes\Less_4.cs" />
     <Compile Include="Classes\Student.cs" />
     <Compile Include="Neuron\InputNeuron.cs" />
     <Compile Include="Neuron\Layers.cs" />
