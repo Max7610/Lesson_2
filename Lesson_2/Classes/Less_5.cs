@@ -76,10 +76,29 @@ namespace Lesson_2.Classes
         }
     }
 
+    class UsersTest
+    {
+        User user_1 = new User();
+        AdminUser user_2 = new AdminUser();
+        void test()
+        {
+            user_1.Read();
+            user_2.Read();
+            AdminUser user_3 = new AdminUser(user_1);
+
+        }
+    }
+    //Задание с пользователями
+
     interface IUser
     {
         void Read();
     }
+    interface IAdmin
+    {
+        void Write();    
+    }
+
     class User : IUser
     {
         public void Read()
@@ -87,8 +106,16 @@ namespace Lesson_2.Classes
             Console.WriteLine("Прочитано");
         }
     }
-    class AdminUser : IUser
+    class AdminUser : IUser, IAdmin 
     {
+        public AdminUser()
+        {
+
+        }
+        public AdminUser(User user)
+        {
+            
+        }
         public void Read()
         {
             Console.WriteLine("Прочитано");

@@ -14,7 +14,8 @@ namespace Lesson_2
     {
         static async Task Main(string[] args)
         {
-          
+            OrderService a = new OrderService();
+            a.OrderMeneger();
 
         }
     }
