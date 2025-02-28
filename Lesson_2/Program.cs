@@ -14,7 +14,7 @@ namespace Lesson_2
     {
         static async Task Main(string[] args)
         {
-            Less_3 less = new Less_3();
+          
 
         }
     }
