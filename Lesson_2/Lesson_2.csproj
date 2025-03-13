@@ -61,8 +61,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Application\Services\ToDoService.cs" />
     <Compile Include="Classes\Less_5.cs" />
+    <Compile Include="Classes\Less_6.cs" />
     <Compile Include="Classes\Student.cs" />
+    <Compile Include="Domain\Entities\TaskItem.cs" />
+    <Compile Include="Domain\Interfaces\IToDoRepository.cs" />
+    <Compile Include="Infrastucture\Data\ToDoRepository.cs" />
     <Compile Include="Neuron\InputNeuron.cs" />
     <Compile Include="Neuron\Layers.cs" />
     <Compile Include="Neuron\Neuron.cs" />
@@ -72,6 +77,7 @@
     <Compile Include="Neuron\Topologi.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="WebUI\Controllers\ToDoController.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -88,5 +94,6 @@
       <Install>false</Install>
     </BootstrapperPackage>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

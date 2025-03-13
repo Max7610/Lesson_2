@@ -85,10 +85,11 @@ namespace Lesson_2.Classes
             user_1.Read();
             user_2.Read();
             AdminUser user_3 = new AdminUser(user_1);
-
+            user_2.Read();
+            user_3.Read();
         }
     }
-    //Задание с пользователями
+    //Задание 3 с пользователями
 
     interface IUser
     {
