@@ -52,6 +52,7 @@
     <Reference Include="System.Configuration" />
     <Reference Include="System.Configuration.Install" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Text.Json, Version=8.0.0.5, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -60,11 +61,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Classes\Less_1.cs" />
-    <Compile Include="Classes\Less_2.cs" />
-    <Compile Include="Classes\Less_3.cs" />
-    <Compile Include="Classes\Less_4.cs" />
+    <Compile Include="Application\Services\ToDoService.cs" />
+    <Compile Include="Classes\Less_5.cs" />
+    <Compile Include="Classes\Less_6.cs" />
     <Compile Include="Classes\Student.cs" />
+    <Compile Include="Domain\Entities\TaskItem.cs" />
+    <Compile Include="Domain\Interfaces\IToDoRepository.cs" />
+    <Compile Include="Infrastucture\Data\ToDoRepository.cs" />
     <Compile Include="Neuron\InputNeuron.cs" />
     <Compile Include="Neuron\Layers.cs" />
     <Compile Include="Neuron\Neuron.cs" />
@@ -74,18 +77,10 @@
     <Compile Include="Neuron\Topologi.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="WebUI\Controllers\ToDoController.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="DataLess3.mdf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <Content Include="DataLess3_log.ldf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-      <DependentUpon>DataLess3.mdf</DependentUpon>
-    </Content>
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.8">
@@ -99,5 +94,6 @@
       <Install>false</Install>
     </BootstrapperPackage>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
